@@ -1,0 +1,23 @@
+<!-- simple-todos.html -->
+<head>
+  <title>Meteor Example</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Meteor Example</h1>
+    </header>
+
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
+
+<template name="task">
+  <li>{{text}}</li>
+</template>
+
